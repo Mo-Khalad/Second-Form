@@ -1,13 +1,20 @@
+input{
+  outline: none !important;
+}
 body {
-  background-size:100% 120%;
-  background-image: url(../images/cover.jpg);  
+  background-image: url(../images/cover.jpg); 
+  background-size: cover; 
 }
 :root{
   --main_color:#162938;
   --second_color:#c4d9ea;
 }
 .navbar {
-  background-color: transparent !important;
+  background-color:transparent !important;
+}
+.navbar-toggler{
+  border: 0 !important;
+  background-color: var(--second_color);
 }
 .nav-item {
   overflow: hidden;
@@ -27,8 +34,10 @@ body {
 }
 .btn-close{
   --bs-btn-close-color: #fff !important;
-  --bs-btn-close-bg:url(../images/close.png) !important;
-  font-size:2.5rem !important;
+  background-color: #c4d9ea;
+  font-size:0.8rem !important;
+  padding: 0.5rem !important;
+  border-radius: 50%;
 }
 .Line{
   background-color: #a0beb5a8;
@@ -39,12 +48,12 @@ body {
 }
 .nav-item:hover .Line {
   margin-left: 0rem;
+  border: 0 !important;
 }
 .navbar-toggler-icon{
-  background-color: rgb(137, 165, 189) !important;
   padding:1rem !important;
   font-size: 0.1rem !important;
-  border-radius: 50% !important;
+  color: rgb(137, 165, 189) !important;
 }
 .form-wrapper{
  display: none;
@@ -61,11 +70,11 @@ body {
 }
 .form-sign-up-btn ,.form-login-btn{
   top:0;
-  width: 27rem;
+  width:100%;
   left:-30rem;
 }
 .form-login-btn{
-left: 0;
+  left: 0;
 }
 #icon-close{
   top:0;
@@ -74,7 +83,7 @@ left: 0;
   border-bottom-left-radius: 1.4rem;
   border-top-right-radius: 1.4rem;
   color: azure;
-  padding:0.6rem;
+  padding:0.6rem !important;
 }
 .input-group input{
   background-color: transparent;
@@ -90,7 +99,7 @@ left: 0;
 }
 .input-group input:focus~label ,
 .input-group input:valid~label{
- top:-1rem;
+ top:-1.5rem;
 }
 .btn-login{
   background-color: var(--main_color);
@@ -105,8 +114,16 @@ left: 0;
   color: var(--main_color);
   font-weight: 700;
 }
- @media screen and (min-width:500px) and (max-width:900px) {
-:root{
-  font-size: 12px;
+@media screen and (max-width:500px){
+.offcanvas{
+  width: 45% !important;
+}
+.form-wrapper{
+width: 23rem;
+}
+}
+@media screen and (min-width:500px) and (max-width:900px) {
+.offcanvas{
+  width: 40% !important;
 }
 }

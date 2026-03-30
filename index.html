@@ -11,7 +11,7 @@
   <body>
   <nav class="navbar bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <button id="btn-login-nav" class="btn btn-outline-light ms-4 me-4 pe-5 ps-5 fs-6" type="submit">
+      <button id="btn-login-nav" class="btn btn-outline-light mx-4 px-5 fs-6" type="submit">
           LogIn
       </button>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -53,13 +53,13 @@
         <a href="#"> <i id="icon-close" class="fa-solid fa-xmark fs-5 position-absolute"></i> </a>
         
         <div class="input-group mt-5">
-          <input class="p-1 m-auto" type="email" name="email" required>
-          <label class="position-absolute">Email</label>
+          <input id="email" class="p-1 m-auto" type="email" name="email" required>
+          <label for="email" class="position-absolute">Email</label>
         </div>
 
         <div class="input-group mt-4">
-          <input class="p-1 m-auto" type="password" name="password" required>
-          <label class="position-absolute">password</label>
+          <input id="password" class="p-1 m-auto" type="password" name="password" required>
+          <label for="password" class="position-absolute">password</label>
         </div>
 
         <div class="remember ms-5 mt-2 text-start">
@@ -69,7 +69,7 @@
         <button class="btn-login p-2 mt-2">Login</button>
 
         <div class="signUp-link mt-3">
-          <p> Dont have in account? <a href="#" class="signUpBtn-link">Register</a> </p>
+          <p> Don't have an account? <a href="#" class="signUpBtn-link">Register</a> </p>
         </div>       
       </form>
 
@@ -77,26 +77,26 @@
         <h2 class="mt-5 fw-bold">Register</h2>
         <a href="#"> <i id="icon-close" class="fa-solid fa-xmark fs-5 position-absolute"></i> </a>
         
-        <div class="input-group mt-3">
-          <input class="p-1 m-auto" type="text" name="firstName" required>
-          <label class="position-absolute">firstName</label>
+        <div class="input-group my-4">
+          <input id="firstName" class="p-1 m-auto" type="text" name="firstName" required>
+          <label for="firstName" class="position-absolute">firstName</label>
         </div>
 
-        <div class="input-group mt-3">
-          <input class="p-1 m-auto" type="email" name="email" required>
-          <label class="position-absolute">Email</label>
+        <div class="input-group my-4">
+          <input id="email-register" class="p-1 m-auto" type="email" name="email" required>
+          <label for="email-register" class="position-absolute">Email</label>
         </div>
 
-        <div class="input-group mt-3">
-          <input class="p-1 m-auto" type="password" name="password" required>
-          <label class="position-absolute">password</label>
+        <div class="input-group my-4">
+          <input id="password-register" class="p-1 m-auto" type="password" name="password" required>
+          <label for="password-register" class="position-absolute">password</label>
         </div>
 
         <div class="remember ms-5 mt-2 text-start">
           <label class="label-checkbox"><input class="checkbox" type="checkbox"> Remember me </label>
         </div>
 
-        <button class="btn-login p-2 mt-2">Login</button>
+        <button class="btn-login p-2 mt-2">Register</button>
 
         <div class="signUp-link mt-3">
           <p> Dont have in account? <a href="#" class="signInBtn-link">LogIn</a> </p>
@@ -104,44 +104,6 @@
       </form>
     </div>         
   </div>
-
-   
-   
-    <!--
-    </div>
-
-    <h2 class="fw-bold sign-up">Register</h2>
-    <div>
-     <a href="#"> <i id="icon-close" class="fa-solid fa-xmark fs-5 position-absolute p-2"></i> </a>
-    </div>
-    <div class="input-group mt-1">
-        <input class="p-1 m-auto" type="text" name="firstName" required>
-        <label class="position-absolute">firstName</label>
-    </div>
-
-    <div class="input-group mt-3">
-      <input class="p-1 m-auto" type="email" name="email" required>
-      <label class="position-absolute">Email</label>
-  </div>
-
-    <div class="input-group mt-3">
-        <input class="p-1 m-auto" type="password" name="password" required>
-        <label class="position-absolute">password</label>
-    </div>
-
-    <div class="remember ms-5 mt-2 text-start">
-        <label class="label-checkbox"><input class="checkbox" type="checkbox"> Remember me </label>
-    </div>
-
-    <button class="btn-login p-2 mt-2">Login</button>
-
-    <div class="signUp-link mt-3">
-      <p > Dont have in account? <a href="#" class="signUpBtn-link">Register</a> </p>
-  </div>        
-
-   </div>
-  -->
-
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
